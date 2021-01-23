@@ -1,199 +1,688 @@
-# Pandas Homework - Pandas, Pandas, Pandas
-
-## Background
-
-The data dive continues!
-
-Now, it's time to take what you've learned about Python Pandas and apply it to new situations. For this assignment, you'll need to complete **one of two** (not both)  Data Challenges. Once again, which challenge you take on is your choice. Just be sure to give it your all -- as the skills you hone will become powerful tools in your data analytics tool belt.
-
-### Before You Begin
-
-1. Create a new repository for this project called `pandas-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Inside your local git repository, create a directory for the Pandas Challenge you choose. Use folder names corresponding to the challenges: **HeroesOfPymoli** or  **PyCitySchools**.
-
-4. Add your Jupyter notebook to this folder. This will be the main script to run for analysis.
-
-5. Push the above changes to GitHub or GitLab.
-
-## Option 1: Heroes of Pymoli
-
-![Fantasy](Images/Fantasy.png)
-
-Congratulations! After a lot of hard work in the data munging mines, you've landed a job as Lead Analyst for an independent gaming company. You've been assigned the task of analyzing the data for their most recent fantasy game Heroes of Pymoli.
-
-Like many others in its genre, the game is free-to-play, but players are encouraged to purchase optional items that enhance their playing experience. As a first task, the company would like you to generate a report that breaks down the game's purchasing data into meaningful insights.
-
-Your final report should include each of the following:
-
-### Player Count
-
-* Total Number of Players
-
-### Purchasing Analysis (Total)
-
-* Number of Unique Items
-* Average Purchase Price
-* Total Number of Purchases
-* Total Revenue
-
-### Gender Demographics
-
-* Percentage and Count of Male Players
-* Percentage and Count of Female Players
-* Percentage and Count of Other / Non-Disclosed
-
-### Purchasing Analysis (Gender)
-
-* The below each broken by gender
-  * Purchase Count
-  * Average Purchase Price
-  * Total Purchase Value
-  * Average Purchase Total per Person by Gender
-
-### Age Demographics
-
-* The below each broken into bins of 4 years (i.e. &lt;10, 10-14, 15-19, etc.)
-  * Purchase Count
-  * Average Purchase Price
-  * Total Purchase Value
-  * Average Purchase Total per Person by Age Group
-
-### Top Spenders
-
-* Identify the the top 5 spenders in the game by total purchase value, then list (in a table):
-  * SN
-  * Purchase Count
-  * Average Purchase Price
-  * Total Purchase Value
-
-### Most Popular Items
-
-* Identify the 5 most popular items by purchase count, then list (in a table):
-  * Item ID
-  * Item Name
-  * Purchase Count
-  * Item Price
-  * Total Purchase Value
-
-### Most Profitable Items
-
-* Identify the 5 most profitable items by total purchase value, then list (in a table):
-  * Item ID
-  * Item Name
-  * Purchase Count
-  * Item Price
-  * Total Purchase Value
-
-As final considerations:
-
-* You must use the Pandas Library and the Jupyter Notebook.
-* You must submit a link to your Github/Git Lab repo that contains your Jupyter Notebook.
-* You must include a written description of three observable trends based on the data.
-* See [Example Solution](HeroesOfPymoli/HeroesOfPymoli_starter.ipynb) for a reference on expected format.
-
-## Option 2: PyCitySchools
-
-![Education](Images/education.png)
-
-Well done! Having spent years analyzing financial records for big banks, you've finally scratched your idealistic itch and joined the education sector. In your latest role, you've become the Chief Data Scientist for your city's school district. In this capacity, you'll be helping the  school board and mayor make strategic decisions regarding future school budgets and priorities.
-
-As a first task, you've been asked to analyze the district-wide standardized test results. You'll be given access to every student's math and reading scores, as well as various information on the schools they attend. Your responsibility is to aggregate the data to and showcase obvious trends in school performance.
-
-Your final report should include each of the following:
-
-### District Summary
-
-* Create a high level snapshot (in table form) of the district's key metrics, including:
-  * Total Schools
-  * Total Students
-  * Total Budget
-  * Average Math Score
-  * Average Reading Score
-  * % Passing Math (The percentage of students that passed math.)
-  * % Passing Reading (The percentage of students that passed reading.)
-  * % Overall Passing (The percentage of students that passed math **and** reading.)
-
-### School Summary
-
-* Create an overview table that summarizes key metrics about each school, including:
-  * School Name
-  * School Type
-  * Total Students
-  * Total School Budget
-  * Per Student Budget
-  * Average Math Score
-  * Average Reading Score
-  * % Passing Math (The percentage of students that passed math.)
-  * % Passing Reading (The percentage of students that passed reading.)
-  * % Overall Passing (The percentage of students that passed math **and** reading.)
-
-### Top Performing Schools (By % Overall Passing)
-
-* Create a table that highlights the top 5 performing schools based on % Overall Passing. Include:
-  * School Name
-  * School Type
-  * Total Students
-  * Total School Budget
-  * Per Student Budget
-  * Average Math Score
-  * Average Reading Score
-  * % Passing Math (The percentage of students that passed math.)
-  * % Passing Reading (The percentage of students that passed reading.)
-  * % Overall Passing (The percentage of students that passed math **and** reading.)
-
-### Bottom Performing Schools (By % Overall Passing)
-
-* Create a table that highlights the bottom 5 performing schools based on % Overall Passing. Include all of the same metrics as above.
-
-### Math Scores by Grade\*\*
-
-* Create a table that lists the average Math Score for students of each grade level (9th, 10th, 11th, 12th) at each school.
-
-### Reading Scores by Grade
-
-* Create a table that lists the average Reading Score for students of each grade level (9th, 10th, 11th, 12th) at each school.
-
-### Scores by School Spending
-
-* Create a table that breaks down school performances based on average Spending Ranges (Per Student). Use 4 reasonable bins to group school spending. Include in the table each of the following:
-  * Average Math Score
-  * Average Reading Score
-  * % Passing Math (The percentage of students that passed math.)
-  * % Passing Reading (The percentage of students that passed reading.)
-  * % Overall Passing (The percentage of students that passed math **and** reading.)
-
-### Scores by School Size
-
-* Repeat the above breakdown, but this time group schools based on a reasonable approximation of school size (Small, Medium, Large).
-
-### Scores by School Type
-
-* Repeat the above breakdown, but this time group schools based on school type (Charter vs. District).
-
-As final considerations:
-
-* Use the pandas library and Jupyter Notebook.
-* You must submit a link to your Github/Git Lab repo that contains your Jupyter Notebook.
-* You must include a written description of at least two observable trends based on the data.
-* See [Example Solution](PyCitySchools/PyCitySchools_starter.ipynb) for a reference on the expected format.
-
-## Hints and Considerations
-
-* These are challenging activities for a number of reasons. For one, these activities will require you to analyze thousands of records. Hacking through the data to look for obvious trends in Excel is just not a feasible option. The size of the data may seem daunting, but pandas will allow you to efficiently parse through it.
-
-* Second, these activities will also challenge you by requiring you to learn on your feet. Don't fool yourself into thinking: "I need to study pandas more closely before diving in." Get the basic gist of the library and then _immediately_ get to work. When facing a daunting task, it's easy to think: "I'm just not ready to tackle it yet." But that's the surest way to never succeed. Learning to program requires one to constantly tinker, experiment, and learn on the fly. You are doing exactly the _right_ thing, if you find yourself constantly practicing Google-Fu and diving into documentation. There is just no way (or reason) to try and memorize it all. Online references are available for you to use when you need them. So use them!
-
-* Take each of these tasks one at a time. Begin your work, answering the basic questions: "How do I import the data?" "How do I convert the data into a DataFrame?" "How do I build the first table?" Don't get intimidated by the number of asks. Many of them are repetitive in nature with just a few tweaks. Be persistent and creative!
-
-* Expect these exercises to take time! Don't get discouraged if you find yourself spending  hours initially with little progress. Force yourself to deal with the discomfort of not knowing and forge ahead. Consider these hours an investment in your future!
-
-* As always, feel encouraged to work in groups and get help from your TAs and Instructor. Just remember, true success comes from mastery and _not_ a completed homework assignment. So challenge yourself to truly succeed!
-
-* Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
-
-### Copyright
-
-Trilogy Education Services © 2019. All Rights Reserved.
+```python
+# Dependencies, load file and look at what we working with
+import pandas as pd
+purchase_data = pd.read_csv("Resources/purchase_data.csv")
+#Optional: give the displayed data cleaner formatting - that way I only need to change it for %s couple of times.
+pd.options.display.float_format = '${:,.2f}'.format
+purchase_data.head(1)
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Purchase ID</th>
+      <th>SN</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Item ID</th>
+      <th>Item Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>Lisim78</td>
+      <td>20</td>
+      <td>Male</td>
+      <td>108</td>
+      <td>Extraction, Quickblade Of Trembling Hands</td>
+      <td>$3.53</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+## Player Count
+
+
+```python
+#Display the total number of players
+group_byname = purchase_data.groupby('SN')
+number_ofPurchases = group_byname['SN'].count()
+print('''Total number of players that bougt something:''', len(number_ofPurchases))
+```
+
+    Total number of players that bougt something: 576
+    
+
+## Purchasing Analysis (Total)
+
+
+```python
+group_byname = purchase_data.groupby('Item Name')
+number_ofItems = group_byname['Item Name'].count()
+print('''Number of Unique Items: ''', len(number_ofItems))
+print('''Average Price: $''',round(purchase_data['Price'].mean(),2))
+print('''Number of Purchases: ''', len(purchase_data['Purchase ID']))
+print('''Total Revenue: $''', round(purchase_data['Price'].sum(),2))
+```
+
+    Number of Unique Items:  179
+    Average Price: $ 3.05
+    Number of Purchases:  780
+    Total Revenue: $ 2379.77
+    
+
+## Gender Demographics
+
+
+```python
+group_nameNgender = purchase_data.groupby(['SN','Gender']).count()
+byGender = group_nameNgender.groupby('Gender').count()
+del byGender['Item ID']
+del byGender['Item Name']
+del byGender['Price']
+byGender.columns = ['Total Count','Percentage of Players']
+byGender.iloc[0,1] = byGender.iloc[0,0] / len(number_ofPurchases) * 100
+byGender.iloc[1,1] = byGender.iloc[1,0] / len(number_ofPurchases) * 100
+byGender.iloc[2,1] = byGender.iloc[2,0] / len(number_ofPurchases) * 100
+byGender['Percentage of Players'] = byGender['Percentage of Players'].apply('{:,.2f}%'.format)
+byGender
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Total Count</th>
+      <th>Percentage of Players</th>
+    </tr>
+    <tr>
+      <th>Gender</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Female</th>
+      <td>81</td>
+      <td>14.06%</td>
+    </tr>
+    <tr>
+      <th>Male</th>
+      <td>484</td>
+      <td>84.03%</td>
+    </tr>
+    <tr>
+      <th>Other / Non-Disclosed</th>
+      <td>11</td>
+      <td>1.91%</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+## Purchasing Analysis (Gender)
+
+
+```python
+tmp1 = purchase_data.groupby('SN').agg({'Purchase ID':'count','Gender':'max','Price':'sum'})
+by_gender = tmp1.groupby('Gender').agg({'Purchase ID':'sum','Price':['mean','sum']})
+by_gender['Average Purchase Price'] = 0
+by_gender.columns = ['Purcase Count','Avg per person','Total purchases','Avg per purchase']
+by_gender.iloc[0,3] = by_gender.iloc[0,2] / by_gender.iloc[0,0]
+by_gender.iloc[1,3] = by_gender.iloc[1,2] / by_gender.iloc[1,0]
+by_gender.iloc[2,3] = by_gender.iloc[2,2] / by_gender.iloc[2,0]
+by_gender
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Purcase Count</th>
+      <th>Avg per person</th>
+      <th>Total purchases</th>
+      <th>Avg per purchase</th>
+    </tr>
+    <tr>
+      <th>Gender</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Female</th>
+      <td>113</td>
+      <td>$4.47</td>
+      <td>$361.94</td>
+      <td>$3.20</td>
+    </tr>
+    <tr>
+      <th>Male</th>
+      <td>652</td>
+      <td>$4.07</td>
+      <td>$1,967.64</td>
+      <td>$3.02</td>
+    </tr>
+    <tr>
+      <th>Other / Non-Disclosed</th>
+      <td>15</td>
+      <td>$4.56</td>
+      <td>$50.19</td>
+      <td>$3.35</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+## Age Demographics
+
+
+```python
+bins = [0, 9, 14, 19, 24, 29, 34, 39, 100]
+group_names = [" <10", "10-14", "15-19", "20-24", "25-29", "30-34","35-39","40+"]
+purchase_data["Age Group"] = pd.cut(purchase_data["Age"], bins, labels=group_names, include_lowest=True)
+tmp1 = purchase_data.groupby('SN').agg({'Purchase ID':'count','Age Group':'max'})
+group_byAge = tmp1.groupby('Age Group').count()
+group_byAge.columns=['Total Count']
+group_byAge['Percentage of Players'] = 0
+for i in range(8):
+    group_byAge.iloc[i,1] = group_byAge.iloc[i,0] / len(number_ofPurchases) * 100
+group_byAge['Percentage of Players'] = group_byAge['Percentage of Players'].apply('{:,.2f}%'.format)
+group_byAge
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Total Count</th>
+      <th>Percentage of Players</th>
+    </tr>
+    <tr>
+      <th>Age Group</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>&lt;10</th>
+      <td>17</td>
+      <td>2.95%</td>
+    </tr>
+    <tr>
+      <th>10-14</th>
+      <td>22</td>
+      <td>3.82%</td>
+    </tr>
+    <tr>
+      <th>15-19</th>
+      <td>107</td>
+      <td>18.58%</td>
+    </tr>
+    <tr>
+      <th>20-24</th>
+      <td>258</td>
+      <td>44.79%</td>
+    </tr>
+    <tr>
+      <th>25-29</th>
+      <td>77</td>
+      <td>13.37%</td>
+    </tr>
+    <tr>
+      <th>30-34</th>
+      <td>52</td>
+      <td>9.03%</td>
+    </tr>
+    <tr>
+      <th>35-39</th>
+      <td>31</td>
+      <td>5.38%</td>
+    </tr>
+    <tr>
+      <th>40+</th>
+      <td>12</td>
+      <td>2.08%</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+## Purchasing Analysis (Age)
+
+
+```python
+tmp1 = purchase_data.groupby('Age Group').agg({'Purchase ID':'count','Price':['mean','sum'],'SN':'count'})
+tmp1.columns=['Purchase Count','Average Purchase Price','Total Purchase Value','Avg purchase per person']
+for i in range(8):
+    tmp1.iloc[i,3] = tmp1.iloc[i,2] / group_byAge.iloc[i,0]
+tmp1
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Purchase Count</th>
+      <th>Average Purchase Price</th>
+      <th>Total Purchase Value</th>
+      <th>Avg purchase per person</th>
+    </tr>
+    <tr>
+      <th>Age Group</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>&lt;10</th>
+      <td>23</td>
+      <td>$3.35</td>
+      <td>$77.13</td>
+      <td>$4.54</td>
+    </tr>
+    <tr>
+      <th>10-14</th>
+      <td>28</td>
+      <td>$2.96</td>
+      <td>$82.78</td>
+      <td>$3.76</td>
+    </tr>
+    <tr>
+      <th>15-19</th>
+      <td>136</td>
+      <td>$3.04</td>
+      <td>$412.89</td>
+      <td>$3.86</td>
+    </tr>
+    <tr>
+      <th>20-24</th>
+      <td>365</td>
+      <td>$3.05</td>
+      <td>$1,114.06</td>
+      <td>$4.32</td>
+    </tr>
+    <tr>
+      <th>25-29</th>
+      <td>101</td>
+      <td>$2.90</td>
+      <td>$293.00</td>
+      <td>$3.81</td>
+    </tr>
+    <tr>
+      <th>30-34</th>
+      <td>73</td>
+      <td>$2.93</td>
+      <td>$214.00</td>
+      <td>$4.12</td>
+    </tr>
+    <tr>
+      <th>35-39</th>
+      <td>41</td>
+      <td>$3.60</td>
+      <td>$147.67</td>
+      <td>$4.76</td>
+    </tr>
+    <tr>
+      <th>40+</th>
+      <td>13</td>
+      <td>$2.94</td>
+      <td>$38.24</td>
+      <td>$3.19</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+## Top Spenders
+
+
+```python
+tmp1 = purchase_data.groupby('SN').agg({'Purchase ID':'count','Price':['mean','sum']})
+tmp1.columns=['Purchase Count','Average Purchase Price','Total Purchase Value']
+tmp2=tmp1.sort_values('Total Purchase Value',ascending=False,)
+tmp2.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Purchase Count</th>
+      <th>Average Purchase Price</th>
+      <th>Total Purchase Value</th>
+    </tr>
+    <tr>
+      <th>SN</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Lisosia93</th>
+      <td>5</td>
+      <td>$3.79</td>
+      <td>$18.96</td>
+    </tr>
+    <tr>
+      <th>Idastidru52</th>
+      <td>4</td>
+      <td>$3.86</td>
+      <td>$15.45</td>
+    </tr>
+    <tr>
+      <th>Chamjask73</th>
+      <td>3</td>
+      <td>$4.61</td>
+      <td>$13.83</td>
+    </tr>
+    <tr>
+      <th>Iral74</th>
+      <td>4</td>
+      <td>$3.40</td>
+      <td>$13.62</td>
+    </tr>
+    <tr>
+      <th>Iskadarya95</th>
+      <td>3</td>
+      <td>$4.37</td>
+      <td>$13.10</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+## Most Popular Items
+
+
+```python
+tmp1 = purchase_data.groupby('Item ID').agg({'Item Name':'max','Purchase ID':'count','Price':['max','sum']})
+tmp1.columns=['Item Name','Purchase Count','Item Price','Total Purchase Value']
+tmp2=tmp1.sort_values('Purchase Count',ascending=False,)
+tmp2.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Item Name</th>
+      <th>Purchase Count</th>
+      <th>Item Price</th>
+      <th>Total Purchase Value</th>
+    </tr>
+    <tr>
+      <th>Item ID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>92</th>
+      <td>Final Critic</td>
+      <td>13</td>
+      <td>$4.88</td>
+      <td>$59.99</td>
+    </tr>
+    <tr>
+      <th>178</th>
+      <td>Oathbreaker, Last Hope of the Breaking Storm</td>
+      <td>12</td>
+      <td>$4.23</td>
+      <td>$50.76</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>Fiery Glass Crusader</td>
+      <td>9</td>
+      <td>$4.58</td>
+      <td>$41.22</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>Persuasion</td>
+      <td>9</td>
+      <td>$3.33</td>
+      <td>$28.99</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>Extraction, Quickblade Of Trembling Hands</td>
+      <td>9</td>
+      <td>$3.53</td>
+      <td>$31.77</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+## Most Profitable Items
+
+
+```python
+tmp1=tmp2.sort_values('Total Purchase Value',ascending=False,)
+tmp1.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Item Name</th>
+      <th>Purchase Count</th>
+      <th>Item Price</th>
+      <th>Total Purchase Value</th>
+    </tr>
+    <tr>
+      <th>Item ID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>92</th>
+      <td>Final Critic</td>
+      <td>13</td>
+      <td>$4.88</td>
+      <td>$59.99</td>
+    </tr>
+    <tr>
+      <th>178</th>
+      <td>Oathbreaker, Last Hope of the Breaking Storm</td>
+      <td>12</td>
+      <td>$4.23</td>
+      <td>$50.76</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>Nirvana</td>
+      <td>9</td>
+      <td>$4.90</td>
+      <td>$44.10</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>Fiery Glass Crusader</td>
+      <td>9</td>
+      <td>$4.58</td>
+      <td>$41.22</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>Singed Scalpel</td>
+      <td>8</td>
+      <td>$4.35</td>
+      <td>$34.80</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+
+```
